@@ -1,0 +1,471 @@
+
+/* Pengaturan Dasar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #eef9ff;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* Header dan Navbar */
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #b9ddeb;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    color: #1597d4;
+    font-size: 26px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #244b5d;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #1597d4;
+}
+
+
+/* Main */
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 0;
+    scroll-margin-top: 80px;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #123b52;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #1597d4;
+    margin-bottom: 8px;
+}
+
+section p {
+    color: #496b7a;
+    margin-bottom: 15px;
+}
+
+
+/* Home */
+
+#home {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#home > div:first-child {
+    flex: 1;
+}
+
+#home > div:last-child {
+    flex: 0 0 320px;
+    text-align: center;
+}
+
+#home p:first-child {
+    color: #1597d4;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#home h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    color: #102f40;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    color: #1597d4;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+#home a {
+    display: inline-block;
+    background-color: #1597d4;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#home a:hover {
+    background-color: #0d78ad;
+}
+
+
+/* Foto Profil */
+
+#home img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Tentang Saya */
+
+#about {
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+#about ul {
+    margin-top: 15px;
+}
+
+#about li {
+    margin-bottom: 8px;
+}
+
+
+/* Pendidikan */
+
+#education {
+    background-color: #dff4ff;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+#education ol {
+    margin-top: 20px;
+}
+
+#education li {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+#education li p {
+    margin-bottom: 0;
+}
+
+
+/* Skills */
+
+#skills {
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+#skills li {
+    background-color: #dff4ff;
+    color: #1597d4;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* Hobi */
+
+#hobby {
+    background-color: #dff4ff;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+#hobby li {
+    margin-bottom: 10px;
+}
+
+
+/* Portfolio */
+
+#portfolio {
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+#portfolio li {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #eef9ff;
+    border-left: 5px solid #1597d4;
+    border-radius: 5px;
+}
+
+#portfolio li p {
+    margin-bottom: 0;
+}
+
+
+/* Kontak */
+
+#contact {
+    background-color: #dff4ff;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+#contact li {
+    margin-bottom: 12px;
+}
+
+#contact a {
+    color: #1597d4;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* JavaScript DOM */
+
+#btn-ubah-teks {
+    background-color: #1597d4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#btn-ubah-teks:hover {
+    background-color: #0d78ad;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #102f40;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    color: #c9e9f5;
+    margin: 0;
+}
+
+
+/* Responsive Tablet */
+
+@media (max-width: 800px) {
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home {
+        gap: 30px;
+    }
+
+    #home > div:last-child {
+        flex: 0 0 250px;
+    }
+
+    #home img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #skills ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* Responsive Mobile */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    #home {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    #home > div:last-child {
+        flex: none;
+    }
+
+    #home img {
+        width: 220px;
+        height: 220px;
+    }
+
+    #home h1 {
+        font-size: 34px;
+    }
+
+    #home h2 {
+        font-size: 19px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    #about,
+    #education,
+    #skills,
+    #hobby,
+    #portfolio,
+    #contact {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #skills ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* ===== BLUE ICE ===== */
+#home {
+    background: linear-gradient(135deg, #f4fcff 0%, #dff5ff 100%);
+    border-radius: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#home img {
+    border-color: #dff7ff;
+    box-shadow: 0 12px 35px rgba(21, 151, 212, 0.22);
+}
+
+#about,
+#skills,
+#portfolio {
+    box-shadow: 0 6px 22px rgba(21, 151, 212, 0.08);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.96);
+}
+
+footer {
+    background-color: #123b52;
+}
